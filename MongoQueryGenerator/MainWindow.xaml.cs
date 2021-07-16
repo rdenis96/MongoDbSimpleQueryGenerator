@@ -87,11 +87,11 @@ namespace MongoQueryGenerator
             });
 
             addField.Clear();
-            addOperatorAnd.IsChecked = null;
-            addOperatorOr.IsChecked = null;
+            addOperatorAnd.IsChecked = false;
+            addOperatorOr.IsChecked = false;
             addValue.Clear();
             addComparator.SelectedIndex = 0;
-            addExists.IsChecked = null;
+            addExists.IsChecked = false;
         }
 
         private bool AreAddConditionsFieldValid()
@@ -195,7 +195,7 @@ namespace MongoQueryGenerator
                 StringBuilder builder = new StringBuilder();
                 foreach (SearchCondition condition in conditionsList.Items)
                 {
-                    builder.Append($"${condition.Operator.ToLower()}: [{{{ParseConditionToQuery(condition)}}}],");
+                    builder.Append($"{{${condition.Operator.ToLower()}: [{{{ParseConditionToQuery(condition)}}}]}},");
                 }
 
                 //remove , for last condition
