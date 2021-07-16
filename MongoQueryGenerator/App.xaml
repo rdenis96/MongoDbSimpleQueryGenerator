@@ -1,0 +1,16 @@
+﻿<Application
+    x:Class="MongoQueryGenerator.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:MongoQueryGenerator"
+    StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Styles\CloseButton.xaml" />
+                <ResourceDictionary Source="Styles\MinimizeButton.xaml" />
+                <ResourceDictionary Source="Styles\Logo.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
