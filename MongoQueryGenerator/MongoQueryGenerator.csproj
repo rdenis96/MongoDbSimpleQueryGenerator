@@ -9,7 +9,7 @@
 
   <ItemGroup>
     <Compile Update="ContentUserControls\ButtonImage.cs">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Compile>
   </ItemGroup>
 
